@@ -5,7 +5,9 @@ RUN mkdir -p /appdynamics
 RUN mkdir -p /opt/xerxes-jwt
 
 
-ADD target/xerxes-jwt-1.11.1-SNAPSHOT.jar /opt/xerxes-jwt/xerxes-jwt.jar
+#ADD target/xerxes-jwt-1.11.1-SNAPSHOT.jar /opt/xerxes-jwt/xerxes-jwt.jar
+ADD /tmp/xerxes-jwt/*.jar /opt/xerxes-jwt/xerxes-jwt.jar
+
 #ADD src/main/resources/application.properties /opt/xerxes-jwt/application.properties
 #ADD startup.sh /startup.sh
 
