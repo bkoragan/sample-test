@@ -5,7 +5,8 @@ RUN mkdir -p /appdynamics
 RUN mkdir -p /opt/xerxes-store
 
 
-ADD target/xerxes-store-1.11.1-SNAPSHOT.jar /opt/xerxes-store/xerxes-store.jar
+#ADD target/xerxes-store-1.11.1-SNAPSHOT.jar /opt/xerxes-store/xerxes-store.jar
+ADD /tmp/xerxes-store/*.jar /opt/xerxes-store/xerxes-store.jar
 #ADD src/main/resources/application.properties /opt/xerxes-store/application.properties
 #ADD startup.sh /startup.sh
 
