@@ -6,11 +6,11 @@ RUN mkdir -p /opt/xerxes-ctrl
 
 
 #ADD target/xerxes-ctrl-1.11.1-SNAPSHOT.jar /opt/xerxes-ctrl/xerxes-ctrl.jar
-ADD /tmp/xerxes-ctrl/*.jar /opt/xerxes-ctrl/xerxes-ctrl.jar
+ADD . /opt/xerxes-ctrl/
 #ADD src/main/resources/application.properties /opt/xerxes-ctrl/application.properties
-ADD startup.sh /startup.sh
+#ADD startup.sh /startup.sh
 
-RUN chmod +x /startup.sh
+#RUN chmod +x /startup.sh
  
 RUN chgrp -R 5000 /opt/logs/
 RUN chmod -R g+w /opt/logs/
