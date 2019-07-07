@@ -5,7 +5,8 @@ RUN mkdir -p /appdynamics
 RUN mkdir -p /opt/xerxes-ctrl
 
 
-ADD target/xerxes-ctrl-1.11.1-SNAPSHOT.jar /opt/xerxes-ctrl/xerxes-ctrl.jar
+#ADD target/xerxes-ctrl-1.11.1-SNAPSHOT.jar /opt/xerxes-ctrl/xerxes-ctrl.jar
+ADD /tmp/xerxes-ctrl/*.jar /opt/xerxes-ctrl/xerxes-ctrl.jar
 #ADD src/main/resources/application.properties /opt/xerxes-ctrl/application.properties
 ADD startup.sh /startup.sh
 
