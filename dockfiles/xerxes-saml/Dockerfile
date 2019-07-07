@@ -5,7 +5,8 @@ RUN mkdir -p /appdynamics
 RUN mkdir -p /opt/xerxes-saml
 
 
-ADD target/xerxes-saml-1.11.1-SNAPSHOT.jar /opt/xerxes-saml/xerxes-saml.jar
+#ADD target/xerxes-saml-1.11.1-SNAPSHOT.jar /opt/xerxes-saml/xerxes-saml.jar
+ADD /tmp/xerxes-saml/*.jar /opt/xerxes-saml/xerxes-saml.jar
 #ADD src/main/resources/application.properties /opt/xerxes-saml/application.properties
 #ADD startup.sh /startup.sh
 
