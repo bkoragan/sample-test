@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-VOLUME /tmp
+##VOLUME /tmp
 #ARG JAR_FILE
 ADD sample-test-0.1.jar sample-test-0.1.jar
 RUN bash -c 'touch /sample-test-0.1.jar'
