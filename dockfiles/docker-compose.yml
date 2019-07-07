@@ -1,0 +1,46 @@
+
+version: '3.3'
+
+services: 
+  xerxes-ctrl: 
+    build: 
+    # build from Dockerfile 
+    
+        context: ./xerxes-ctrl 
+        dockerfile: Dockerfile
+    ports:
+         - "11001:11001"
+   # volumes:
+    # - .:/code
+  #redis:
+   # image: redis
+   
+#services: 
+  xerxes-jwt: 
+    build: 
+    # build from Dockerfile 
+    
+        context: ./xerxes-jwt
+        dockerfile: Dockerfile
+    ports:
+         - "11002:11002"
+
+
+  xerxes-saml: 
+    build: 
+    # build from Dockerfile 
+    
+        context: ./xerxes-saml
+        dockerfile: Dockerfile
+    ports:
+         - "11003:11003"
+
+#services: 
+  xerxes-store: 
+    build: 
+    # build from Dockerfile 
+    
+        context: ./xerxes-store
+        dockerfile: Dockerfile
+    ports:
+         - "11004:11004"
